@@ -9,9 +9,9 @@ public class TestNumberGuessGame {
     @Test
 public void TestNumberGuess(){
   //  Boolean expect =true;
-    NumberGuessGame n = new NumberGuessGame(1);
-    System.out.println(n.resultToString());
-    //Assert.assertEquals(expect, autual);
+//    NumberGuessGame n = new NumberGuessGame();
+//    System.out.println(n.getRandomNumber());
+//    //Assert.assertEquals(expect, autual);
 
 
 

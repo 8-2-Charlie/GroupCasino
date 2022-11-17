@@ -1,15 +1,14 @@
 package com.github.zipcodewilmington.casino.games.numberguess;
 
+import java.sql.SQLOutput;
 import java.util.Random;
 import java.util.Scanner;
 
-/**
- * Created by leon on 7/21/2020 NumberGuessGame.
- */
-public class NumberGuessGame {
-    private int num;
 
-    public NumberGuessGame(int num) {
+public class NumberGuessGame {
+public int num;
+
+    public NumberGuessGame() {
         this.num = num;
     }
     public void setNum(int num) {
@@ -22,20 +21,20 @@ public class NumberGuessGame {
 
     public int getRandomNumber(){
 
-        int randomNumber = (int)(Math.random()*10)+1;
-        return randomNumber;
+        return (int)(Math.random()*10)+1;
     }
     public Boolean numberCompare(){
         String result="";
         Scanner in = new Scanner(System.in);
         System.out.println("Enter a number from 1 to 10: ");
-        num = in.nextInt();
+         num = in.nextInt();
+        System.out.println(num);
 
         return num==getRandomNumber();
 //
     }
     public String resultToString(){
-        NumberGuessGame numGuess =  new NumberGuessGame(int n);
+        NumberGuessGame numGuess =  new NumberGuessGame();
         String result="";
         if(numGuess.numberCompare()){
             return result+=("You win, our number is "+ num);
