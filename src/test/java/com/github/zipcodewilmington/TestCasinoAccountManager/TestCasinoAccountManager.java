@@ -5,28 +5,14 @@ import com.github.zipcodewilmington.casino.CasinoAccountManager;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
+import java.sql.SQLOutput;
+
 public class TestCasinoAccountManager {
 
     @Test
     public void testRegisterAccount(){
-//        CasinoAccountManager expectedManager = new CasinoAccountManager();
-//        CasinoAccount expectedAccount=new CasinoAccount("John","John1");
-//        expectedManager.registerAccount(expectedAccount);
-//
-//        CasinoAccountManager actualManager = new CasinoAccountManager();
-//        CasinoAccount actualAccount = actualManager.createAccount("John","John1");
-//        actualManager.registerAccount(actualAccount);
-//
-//        Assert.assertEquals(
-//                expectedManager.getAccount("John","John1").getPassword(),
-//                actualManager.getAccount("John","John1").getPassword()
-//        );
-//
-//        Assert.assertEquals(
-//                expectedManager.getAccount("John","John1").getUsername(),
-//                actualManager.getAccount("John","John1").getUsername()
-//        );
-     //   CasinoAccount casinomember = new CasinoAccount("John","John123");
-
+        CasinoAccount casinoMember = new CasinoAccount("John","John123");
+        CasinoAccountManager casinoAccountManagerMember = new CasinoAccountManager();
+        System.out.print(casinoAccountManagerMember.createAccount(casinoMember.getUsername(),casinoMember.getPassword()));
     }
 }
